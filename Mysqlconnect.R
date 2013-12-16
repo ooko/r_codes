@@ -5,9 +5,7 @@ install.packages("RMySQL")
 library(RMySQL)
 
 ####create an ODBC connection
-con <- dbConnect(MySQL(), user="dmanager", password="dmanager", 
-                     dbname="kidms", host="Keklf-mysqluat")
-                     
+
 ####list the number of tables
 dbListTables(con)  
 
